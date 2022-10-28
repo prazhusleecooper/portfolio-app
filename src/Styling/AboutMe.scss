@@ -1,0 +1,82 @@
+@import './Global.scss';
+
+.about-me-wrapper {
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    .intro-wrapper {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 145px 0 0;
+        
+        .name-text {
+            font-size: 85px;
+            font-weight: 900;
+            color: $text-white;
+            text-align: start;
+            
+            .last-name {
+                color: $primary-purple;
+            }
+        }
+
+        .changing-text-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            .i-am-text {
+                margin: 0 12px 0 0;
+                font-size: 45px;
+                color: $text-grey;
+            }
+
+            #typewriter {
+                font-size: 45px;
+                color: $primary-purple;
+                font-weight: 700;
+            }
+        }
+
+        .grey-ruler {
+            border-top: 3px solid $text-grey;
+            width: 25%;
+            margin: 25px 0;
+        }
+
+        .intro-paragraph {
+            width: 60%;
+
+            .intro-text {
+                color: $text-grey;
+                font-size: 21px;
+                text-align: start;
+            }
+        }
+    }
+    
+    .scroll-icon-section {
+        // margin: 0 0 45px;
+
+        
+        @keyframes smoothbounceball{
+            from { transform: translateY(0);}
+            to { transform: translateY(-50px);}
+        }
+        
+        .scroll-icon {
+            font-size: 35px;
+            color: $text-white;
+            animation: smoothbounceball 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+}

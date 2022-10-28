@@ -1,0 +1,188 @@
+@import './Global.scss';
+
+
+.skill-set-wrapper {
+    // height: 95vh;
+    display: flex;
+    flex-direction: column;
+    margin: 155px 0 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .skill-set-container {
+        height: 80%;
+        width: 85%;
+        border-radius: 35px;
+        background-color: $primary-white;
+        box-shadow: 0px 0px 55px 0px $primary-purple;
+        padding: 30px;
+
+        .title-text {
+            font-size: 22px;
+            color: $primary-purple;
+            font-weight: 700;
+        }
+
+        .purple-ruler {
+            border-top: 3px solid $primary-purple;
+            width: 115px;
+            margin: 10px 0 0;
+        }
+
+        .primary-focus {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            grid-gap: 15px;
+
+            p {
+                font-size: 16px;
+                color: $text-black;
+
+                span.mern-text {
+                    color: $primary-purple;
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .other-skills {
+            
+            margin: 15px 0 0;
+
+            .other-skills-title {
+                font-size: 18px;
+                color: $text-black;
+                font-weight: 700;
+            }
+
+            .other-skills-section {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 15px 0 0;
+                grid-gap: 20px;
+            }
+        }
+    }
+}
+
+.work-experience-wrapper {
+    // height: 95vh;
+    display: flex;
+    flex-direction: column;
+    margin: 85px 0 0;
+    padding: 65px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-purple;
+
+    .work-experience-container {
+        height: 80%;
+        width: 85%;
+        border-radius: 35px;
+        margin: 50px 0 ;
+        background-color: $bg-color;
+        box-shadow: 0px 0px 25px 0px $primary-white;
+        padding: 30px;
+
+        .title-text {
+            font-size: 24px;
+            color: $text-white;
+            font-weight: 700;
+
+            .experience-text {
+                color: $primary-purple;
+            }
+
+            .sub-text {
+                font-size: 18px;
+                color: $text-white;
+                font-weight: 700;
+
+                .experience-text {
+                    margin: 10px 0 10px 5px;
+                    color: $text-white;
+                    background-color: $primary-purple;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .purple-ruler {
+            border-top: 3px solid $primary-purple;
+            width: 405px;
+            margin: 10px 0 0;
+        }
+
+        .experience-section {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .experience-block {
+                width: 28%;
+                // height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                border-radius: 15px;
+                padding: 15px;
+                grid-gap: 15px;
+
+                .project-name {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                .project-description {
+                    font-size: 18px;
+                    font-weight: 400;
+                    height: 200px;
+                }
+                
+                button.visit-btn {
+                    width: 100%;
+                    padding: 15px 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.scroll-icon-section {
+    margin: 75px 0 0 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @keyframes smoothbounceball{
+        from { transform: translateY(0);}
+        to { transform: translateY(-50px);}
+    }
+    
+    .scroll-icon {
+        font-size: 35px;
+        color: $text-white;
+        animation: smoothbounceball 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+}

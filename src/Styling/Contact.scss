@@ -1,0 +1,162 @@
+@import './Global.scss';
+
+
+.contact-wrapper {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 155px 0 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .contact-container {
+        height: 350px;
+        width: 85%;
+        border-radius: 35px;
+        box-shadow: 0px 0px 95px 0px $primary-purple;
+        // padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        .socials-section {
+            width: 50%;
+            height: 100%;
+            padding: 30px;
+            background-color: $primary-white;
+            border-top-left-radius: 35px;
+            border-bottom-left-radius: 35px;
+
+            .title {
+                font-size: 22px;
+                color: $primary-purple;
+                font-weight: 700;
+            }
+            
+            .socials-icons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                grid-gap: 15px;
+                margin: 15px 0;
+            }
+            
+            .resume-title {
+                font-size: 22px;
+                color: $text-black;
+                font-weight: 700;
+            }
+
+            .resume-cv-section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                grid-gap: 15px;
+                margin: 15px 0;
+
+                button.resume-btn {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    grid-gap: 15px;
+                    padding: 5px 10px;
+                    background-color: $primary-purple;
+                    color: $text-white;
+                    font-size: 16px;
+                    font-weight: 700;
+                    outline: none;
+                    border: 2px solid $primary-purple;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                
+                button.cv-btn {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    grid-gap: 15px;
+                    padding: 5px 10px;
+                    background-color: $primary-white;
+                    color: $primary-purple;
+                    font-size: 16px;
+                    font-weight: 700;
+                    outline: none;
+                    border: 2px solid $primary-purple;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .contact-section {
+            width: 50%;
+            height: 100%;
+            padding: 30px;
+            // border: 1px solid $bg-color;
+            border: none;
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+            background-color: $primary-purple;
+
+            .title {
+                font-size: 22px;
+                color: $primary-white;
+                font-weight: 700;
+
+                .sub-text {
+                    font-size: 20px;
+                    color: $text-black;
+                    font-weight: 600;
+                }
+            }
+            
+            .contact-icons {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                grid-gap: 25px;
+                margin: 15px 0;
+
+                .contact-method-text {
+                    font-size: 20px;
+                    color: $text-white;
+                    font-weight: 600;
+                    margin: 0 0 -10px;
+                }
+
+                button {
+                    min-width: 280px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 7.5px 10px;
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+
+                button.mail-btn {
+                    border: 2px solid $primary-white;
+                    background-color: $primary-purple;
+                    color: $primary-white;
+                }
+                
+                button.phone-btn {
+                    border: 2px solid $primary-white;
+                    background-color: $primary-white;
+                    color: $primary-purple;
+                }
+            }
+        }
+
+    }
+}

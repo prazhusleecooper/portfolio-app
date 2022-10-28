@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+// ? GLOBAL STYLINGS
+* {
+    font-family: 'Mulish';
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2.5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #040404;
+        padding: 15px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #8006CF;
+        border-radius: 15px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #B7B7B6;
+    }
+}
+
+
+// ? COLORS
+// $bg-color: #1E1E1E;
+$bg-color: #040404;
+$primary-purple: #8006CF;
+$primary-white: #FFFFFF;
+$text-white: #FFFFFF;
+$text-black: #000000;
+$text-grey: #B7B7B6;
+$primary-grey: #B7B7B6;
+
